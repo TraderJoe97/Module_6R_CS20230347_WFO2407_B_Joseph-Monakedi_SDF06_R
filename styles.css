@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Base Styles*/
 
 :root {
     font-size: 10px;
@@ -21,10 +21,12 @@ body {
 
 img {
     display: block;
+    height: 100%;
 }
 .container {
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 /* profile section */
 .profile {
@@ -62,8 +64,10 @@ img {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1vh;
+    grid-gap: 5px;
 
 }
 .gallery-item {
