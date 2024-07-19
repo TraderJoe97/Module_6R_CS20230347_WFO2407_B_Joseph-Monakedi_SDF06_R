@@ -16,8 +16,77 @@ body {
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
+    width: 100%;
 }
 
 img {
     display: block;
+}
+.container {
+    display:flex;
+    justify-content: center;
+}
+/* profile section */
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+.profile-image {
+   border: 10px solid #659f8f;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profile-user-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile-settings-btn { 
+    border: none;
+    background: none;
+}
+.profile-stats > * {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.profile-stat-count {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.gallery-item {
+ flex-grow: 1;
+ width: 33%;
+ padding: 5px;
+}
+.gallery-image {
+    z-index: 1;
+    object-fit: cover;
+}
+.gallery-item-info {
+   position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-item-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visually-hidden {
+    display: none;
 }
